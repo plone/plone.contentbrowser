@@ -5,7 +5,10 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="plone.contentbrowser">
 
-  <five:registerPackage package="." initialize=".initialize" />
+
+  <includeDependencies package="." />
+  <include package=".browser" />
+  <include package=".adapters" />
 
   <genericsetup:registerProfile
       name="default"
@@ -15,5 +18,5 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
   <!-- -*- extra stuff goes here -*- -->
-  
+
 </configure>

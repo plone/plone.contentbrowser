@@ -42,7 +42,8 @@ setup(name='plone.contentbrowser',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'Products.CMFCore',
+          'plone.app.intid'
       ],
       extras_require={'test': ['plone.app.testing']},
       entry_points="""

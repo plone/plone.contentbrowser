@@ -1,0 +1,26 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plone.contentbrowser">
+
+  <!-- Item details adapters -->
+  <adapter
+    for="Products.CMFCore.interfaces.IContentish"
+    provides="..interfaces.IContentDetails"
+    factory=".contentdetails.BaseContentDetails"
+    />
+
+  <adapter
+    for="Products.ATContentTypes.interfaces.IATImage"
+    provides="..interfaces.IContentDetails"
+    factory=".contentdetails.ImageDetails"
+    />
+
+  <adapter
+    for="Products.ATContentTypes.interfaces.IATFile"
+    provides="..interfaces.IContentDetails"
+    factory=".contentdetails.FileDetails"
+    />
+
+</configure>

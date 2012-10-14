@@ -4,5 +4,7 @@ Changelog
 1.0-dev (unreleased)
 --------------------
 
+- added json view to show item details [gborelli]
+- added adapters to show content details [gborelli]
+- added json view for listing contents [gborelli]
 - Package created using templer
-  []
